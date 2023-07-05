@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fromis_9 Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">fromis_9 Survey Form</h1>
+    <p id="description">
+      Help us to make a better comeback by filling the form, Thank you!
+    </p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+
+      <label for="number" id="number-label">
+        Age (opsional)
+        <input
+          type="number"
+          id="number"
+          min="1"
+          max="99"
+          placeholder="Age"
+          required
+        />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        What concept do you expect for the next comeback?
+      </label>
+      <select name="dropdown" id="dropdown">
+        <option value="1">Select your favourite concept</option>
+        <option value="2">Girl Crush Concept</option>
+        <option value="3">Cute Concept</option>
+        <option value="4">School Concept</option>
+        <option value="5">Sexy Concept</option>
+        <option value="6">Retro Concept</option>
+      </select>
+
+      <label for="member" id="member-label">
+        Who is your favourite member?
+      </label>
+      <input type="radio" name="member" value="1" checked /> Lee Sae Rom (이새롬) <br />
+      <input type="radio" name="member" value="2 "/> Song Ha Young (송하영) <br />
+      <input type="radio" name="member" value="3" /> Jang Gyu Ri (장규리) (Former Member)
+      <br />
+      <input type="radio" name="member" value="4" /> Park Ji Won (박지원) <br />
+      <input type="radio" name="member" value="5" /> Roh Ji Sun (노지선) <br />
+      <input type="radio" name="member" value="6" /> Lee Seo Yeon (이서연) <br />
+      <input type="radio" name="member" value="7" /> Lee Chae Young (이채영) <br />
+      <input type="radio" name="member" value="8" /> Lee Na Gyung (이나경) <br />
+      <input type="radio" name="member" value="9" /> Baek Ji Heon (백지헌) <br />
+
+      <label for="checkbox">
+        Which EP(s) do you like Most? (Check all that apply) <br />
+        <input type="checkbox" value="1" /> To. Day <br />
+        <input type="checkbox" value="2" /> My little Society <br />
+        <input type="checkbox" value="3" /> Midnight Guest <br />
+        <input type="checkbox" value="4" /> From our Memento Box <br />
+      </label>
+
+      <label for="textarea">
+        Any comments or suggestions?
+        <textarea name="textarea" id="textarea-label" cols="30" rows="7">Enter your comment here...</textarea>
+      </label>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
